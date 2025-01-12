@@ -61,7 +61,7 @@ export const HeroSection = () => (
       sx={{
         backgroundColor: "#E2F5FB",
         paddingTop: 5,
-        minHeight: { xs: "900px", sm: "1000px", md: "550px" },
+        minHeight: { xs: "1200px", sm: "1300px", md: "550px" },
         position: "relative",
       }}
     >
@@ -72,7 +72,7 @@ export const HeroSection = () => (
           textAlign: "center",
           color: "#003569",
           fontWeight: "bold",
-          fontSize: { xs: 32, sm: 68 },
+          fontSize: { xs: 42, sm: 68 },
         }}
       >
         Essential Vitamins
@@ -116,8 +116,8 @@ export const HeroSection = () => (
         <Box
           sx={{
             backgroundColor: "#FFE9B5",
-            height: "200px",
-            width: "200px",
+            height: "250px",
+            width: "250px",
             borderTopLeftRadius: "80px",
             borderBottomRightRadius: "80px",
             order: { xs: "0", md: "1" },
@@ -127,9 +127,9 @@ export const HeroSection = () => (
           <img
             style={{
               position: "absolute", // Allow positioning outside the Box
-              top: "-50px", // Move image up by 50px (half of its height)
+              top: "-55px", // Move image up by 50px (half of its height)
               left: "0",
-              width: "200px",
+              width: "250px",
             }}
             alt="capsule-box"
             src="https://s3-alpha-sig.figma.com/img/6dd8/7f0a/f73aa0189cad884f47381dd92205b7c0?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fKBdYNzz-0WLMCzHVMjmF5wp1EE1NxCDwywcgev4cWWVYR35QiFVoQsnlw2Wn6XVn1N~0xdMIDAJb6pvSn7L-UT4P33Iz489kgRRp6PcdH7O9JeBytqwDfbwpyfsI2fmF2ORbEuRmdVCJ7SZIFqRSnGfGa42tRILeel5KF6FFK~OEiR5IAgAbkvOVqZHyeQLy-4dx~O2zKIABgB1u51rEIvQYIdr5wRX16ToVoVS8fGP7k1FqGVGIquR650wXv6AiY0mDKfdnpeopo6G-9kgGilMdcZFr8MZFClfzMEK2lPrJdGu~g9gVMs8u7GE1o7H1P1mxd--l66ksdCMJAxhKg__"
@@ -151,15 +151,16 @@ export const HeroSection = () => (
             }}
           >
             <Avatar
+              sx={{ width: 70, height: 70 }}
               src="https://s3-alpha-sig.figma.com/img/1d76/fc2a/470ec862c44115964979f90b5cb3a94e?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Th4rZL6UW0PSe1myw5I2XSQNdiIva-4mr35orARFhmQ-CJcWSNgwc35tmpA5l40mlubFgehTSLb~vcPGCpceWLWUqZ99UTwIQoZ2o~29VM0cdLGZ3BVH38EXc19kTtd4KQ34s-NQaDl~nUTu72KyZQzDIqGR8uhlkTVMKxJPMMjd3DZeX3hqpkVwlI1-E5aWG1vs9J~vH2bMRQimw36fnShXO3yl5m0cB197QZYOHcMWPrfU4LhsaXm4fNf055dyUO~X~GLlZxSoWOaiMxwBMWNsVDcl7wMVccf~MueLxbVJDfgX-f5BuLmzcUz5JpjaaQlYxaB~M~YQaDINRlB54g__"
               alt="vitamins"
             />
-            <Box sx={{ width: "120px" }}>
+            <Box sx={{ width: "140px" }}>
               <Typography
                 variant="body1"
                 sx={{
                   color: "#17414F",
-                  fontSize: "12px",
+                  fontSize: "16px",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >
@@ -169,7 +170,7 @@ export const HeroSection = () => (
                 variant="body2"
                 sx={{
                   color: "#727272",
-                  fontSize: "8px",
+                  fontSize: "12px",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >
@@ -187,15 +188,16 @@ export const HeroSection = () => (
             }}
           >
             <Avatar
+              sx={{ width: 70, height: 70 }}
               src="https://s3-alpha-sig.figma.com/img/c0ae/6abf/9917c0af12dcc49a9c0130d3e68e04b1?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hh0dnaq~vggZXRyPdNVZ5gDBwrbUn7ndiPhy3yqYh7-QNdqDNKfrzMdTRiFpUkJ6cWNusghP4RlAZx43hQQp2kwvSijVVqB5z4hEash7Sqg~IOFqfdSAYfO1TfLWlqmITqU9Cu8XDFQMgipyKdAJrFrRacLR6AYsUvrzVgec6FfYO5bCMjn6vzabXvmPSX-QEjizIARdhbdx8VeY16aOjTBlRUnZkbn6h-lNI3lzfRkc6s7hpLDteDeNZyhvr70CebFwVSi6cPlsSdSkh2pY5Jo47CyvFpUMbEFAVcOCMiWVfFW3jQEDhzc-nYeI095og8BxhHzRdJZhlFnofcGoDA__"
               alt="weight loss"
             />
-            <Box sx={{ width: "120px" }}>
+            <Box sx={{ width: "140px" }}>
               <Typography
                 variant="body1"
                 sx={{
                   color: "#17414F",
-                  fontSize: "12px",
+                  fontSize: "16px",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >
@@ -205,7 +207,7 @@ export const HeroSection = () => (
                 variant="body2"
                 sx={{
                   color: "#727272",
-                  fontSize: "8px",
+                  fontSize: "12px",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >
@@ -223,15 +225,16 @@ export const HeroSection = () => (
             }}
           >
             <Avatar
+              sx={{ width: 70, height: 70 }}
               src="https://s3-alpha-sig.figma.com/img/ad6c/6ad1/2116d12f8d75befd05e66d41425cb402?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FqQ58ybVFSOmJfLJwlG42ci~pW1aOYBM4QzwveypXInYuWwR5YgtwZ-nKzJAhac9n-bqpfDZMa4RS~qn53O8URzpW-u5b5xR1fHnamtSyuf6OWy~doyBkbYyreNwjvFnfhHRwXE7U6IykzfJkPOWy5oB-cTfZN~hTT~ZIfCJMbZTYBGVr~q7CztlviaJRD4Dicr~6N4ROGgIfrce7mND9uNOOv8UMClpWrRba8CnSQrwRmguJsMqGiYoAW2jx~g8XEdG2ESiDaq~PCe3ci9FGKoZqlppNCWQh1ihJoEArxw6EpuuzNMLidIl-QkXb7h02O1vyad~aNnUfVhdgwuNLQ__"
               alt="foods"
             />
-            <Box sx={{ width: "120px" }}>
+            <Box sx={{ width: "140px" }}>
               <Typography
                 variant="body1"
                 sx={{
                   color: "#17414F",
-                  fontSize: "12px",
+                  fontSize: "16px",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >
@@ -241,7 +244,7 @@ export const HeroSection = () => (
                 variant="body2"
                 sx={{
                   color: "#727272",
-                  fontSize: "8px",
+                  fontSize: "12px",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >
@@ -255,7 +258,7 @@ export const HeroSection = () => (
       <Container
         sx={{
           position: "absolute", // Allow positioning outside the Box
-          bottom: { xs: "-1100px", sm: "-500px", md: "-300px" }, // Move image up by 50px (half of its height)
+          bottom: { xs: "-1330px", sm: "-580px", md: "-400px" }, // Move image up by 50px (half of its height)
           left: "0",
           right: "0",
           width: "90%",
@@ -329,13 +332,13 @@ export const HeroSection = () => (
                   marginY={1}
                   variant="body2"
                   color="white"
-                  sx={{ fontSize: 13 }}
+                  sx={{ fontSize: 16 }}
                 >
                   {data.title}
                 </Typography>
                 <Typography
                   variant="body2"
-                  sx={{ fontSize: "8px", width: "120px" }}
+                  sx={{ fontSize: "12px", width: "120px" }}
                   color="#D9D9D9"
                 >
                   {data.desc}
