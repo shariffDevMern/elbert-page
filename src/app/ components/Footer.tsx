@@ -77,6 +77,7 @@ export const Footer = () => (
           sx={{
             display: "flex",
             alignItems: "flex-start",
+            justifyContent: { xs: "center", sm: "flex-start" },
             gap: 3,
             marginTop: 3,
           }}
@@ -103,6 +104,7 @@ export const Footer = () => (
           sx={{
             display: "flex",
             gap: 1,
+            justifyContent: { xs: "center", sm: "flex-start" },
             alignItems: "center",
             color: "white",
             marginTop: 3,
