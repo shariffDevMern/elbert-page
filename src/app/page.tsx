@@ -3,7 +3,7 @@ import { HeroSection } from "./ components/HeroSection";
 
 export default function Home() {
   return (
-    <Container sx={{ backgroundColor: "white" }}>
+    <Container>
       <HeroSection />
     </Container>
   );
