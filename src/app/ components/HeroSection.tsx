@@ -10,6 +10,7 @@ import ScienceIcon from "@mui/icons-material/Science";
 import EnergySavingsLeafIcon from "@mui/icons-material/EnergySavingsLeaf";
 import { FlagCircleOutlined } from "@mui/icons-material";
 import { v4 as uuidV4 } from "uuid";
+import Image from "next/image";
 
 const cardData = [
   {
@@ -53,7 +54,7 @@ const cardData = [
 export const HeroSection = () => (
   <>
     <Container>
-      <img
+      <Image
         style={{ marginTop: 10, marginBottom: 10, width: 150 }}
         alt="elbert-logo"
         src="https://s3-alpha-sig.figma.com/img/8be1/c27b/24873ffb8a3345a8dedea9b0d8f9e7ba?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GG2iTwwFWXLLRha5qIH68jC4goFDiylKxfHytuR1FcMrJO6saFw2KdIFD7vQE1cq~1TxDxx5~Ipaa8q~9axEcvuOa2PDz9w~fhBQRjEp~edpSPrrvo3NMAqI3OKglbfC17EwtqXbDhesfazJ9qwr5M4zMoegPbqqf7ecwHYtUV-RfwcN3EOmAFB0Dez8Tc62pSTbR-fKcMf254XsHZzr0hJXspXpS82q-e8w~x7aGtEBGQKyvEgAc~qn--yVhhioHOaXvw1G6nnbxgrxQAV-2T9R5Mi1WMc1oosoKOGyMG3mMc-rFJas1JctNJX-oIlbtN3wkAOv8PEV1LrFXvMzBw__"
@@ -125,7 +126,7 @@ export const HeroSection = () => (
               position: "relative", // Make Box the reference point for absolute positioning
             }}
           >
-            <img
+            <Image
               style={{
                 position: "absolute", // Allow positioning outside the Box
                 top: "-50px", // Move image up by 50px (half of its height)
@@ -269,7 +270,7 @@ export const HeroSection = () => (
                 width: "20px",
                 backgroundColor: "lightgray",
                 borderRadius: "100%",
-                marginBottom:2
+                marginBottom: 2,
               }}
             ></Box>
             <Box
@@ -299,6 +300,7 @@ export const HeroSection = () => (
             >
               {cardData.map((data) => (
                 <Grid
+                  key={data.id}
                   xs={12}
                   sm={6}
                   md={4}
