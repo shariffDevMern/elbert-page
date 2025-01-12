@@ -49,7 +49,7 @@ export const Ingredients = () => (
         INGREDIENTS
       </Typography>
       <Typography
-        sx={{ color: "#17414F", fontSize: "38px", fontWeight: "bold" }}
+        sx={{ color: "#17414F", fontSize: "38px", fontWeight: "bold",lineHeight:1.2 }}
       >
         Better Ingredients
       </Typography>

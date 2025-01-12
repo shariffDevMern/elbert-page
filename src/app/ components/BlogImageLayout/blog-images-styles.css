@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 15px;
+}
+
+#capsule {
+  background-image: url("https://s3-alpha-sig.figma.com/img/b9db/d8fe/538ccfb6083e67ad7f101adbfd0e48d7?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BeIihzuTxemiIMHhKjIVwvGcPI5GzvTbx0bpnyPs45nZxeiEz5~-NSkogPxbY6fMkCt6Bu~kQ~Z8nBioaEScBNjUc9fSzM2WBdSpYlTchGm3g-uQFOpLaBwGaRYC5fmXQWpPbPGfJ~ty8FnHo52f7wia1jIBxyRwAGHOJkSwwBTQPVdkTtNE0LHcCS1B21HJmQ7~aJFB94cz0MkIfhDCo3l4wex-7sVKWkdcGKl6XPtC7NJx6ywwYtPWZCqu8-6ZeAQG1lHtCxwSTx1ezQvbKmD5ER81r3~1sOx4onIuOtmV5PAMCdCYm0u2gM7pQN3BKawWl5d~r-1sYVCM1C1vCw__");
+}
+
+.column div {
+  border-radius: 10px;
+  background-image: url("https://s3-alpha-sig.figma.com/img/e186/51c0/bff366efc73350d196325f72ae85615d?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=puH-g66AdIGakZomeJG~tbps1FTF8SpbaQ1rVx7-S7KFTDGc0rz5uSC5EpAKJ7A8dyQ7h6C7x-CHcFTIGXpe0-VnciZh8mmuNjuZw6rnQu2DuKs4iysh4KShlr4tV4SQMbcpYyy-Pvl92DT30oqJhuRVG0jHrGQwNUAhRWuEyu4VQY9955m8TH1JCZhx~mEKx5-NPinjTsNuoaIMvkUrfZOsc69LZhIftLhHJ7f1GxZ6BFOTk5W~Amar77USYm6An5LP~GYG9CX~HjuWqB238zi9M9i1xcfMcAc1mmqp2ROuvCucksB9unm~ETswTi1qI3~2PEQ98c8EnTORK7cLyg__");
+  margin-top: 8px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}

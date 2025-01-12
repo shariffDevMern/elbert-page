@@ -8,60 +8,57 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import ScienceIcon from "@mui/icons-material/Science";
-import EnergySavingsLeafIcon from "@mui/icons-material/EnergySavingsLeaf";
-import { FlagCircleOutlined } from "@mui/icons-material";
 import { v4 as uuidV4 } from "uuid";
 import { Ingredients } from "./Ingredients";
+import { Blog } from "./Blog";
+import { Footer } from "./Footer";
 
 const cardData = [
   {
     id: uuidV4(),
-    icon: <ScienceIcon />,
+    icon: "/assets/a.item-icon-e (1).png",
     title: "Clinically Studied",
     desc: "All products that we offer have undergone lab and safety tests",
   },
   {
     id: uuidV4(),
-    icon: <EnergySavingsLeafIcon />,
+    icon: "/assets/a.item-icon-e (2).png",
     title: "Vegetarian Friendly",
     desc: "We have a wide selection of vegetarian products to meet your needs",
   },
   {
     id: uuidV4(),
-    icon: <FlagCircleOutlined />,
+    icon: "/assets/a.item-icon-e (3).png",
     title: "Made in India",
     desc: "Shop local and explore health products made right here in India",
   },
   {
     id: uuidV4(),
-    icon: <ScienceIcon />,
-    title: "Clinically Studied",
-    desc: "All products that we offer have undergone lab and safety tests",
+    icon: "/assets/a.item-icon-e.png",
+    title: "Free shipping",
+    desc: "We deliver to your door with no shipping costs on your orders",
   },
   {
     id: uuidV4(),
-    icon: <ScienceIcon />,
-    title: "Clinically Studied",
-    desc: "All products that we offer have undergone lab and safety tests",
+    icon: "/assets/a.item-icon-e (5).png",
+    title: "No Risk",
+    desc: "We ensure that all products are safe and within their use-by date",
   },
   {
     id: uuidV4(),
-    icon: <ScienceIcon />,
-    title: "Clinically Studied",
-    desc: "All products that we offer have undergone lab and safety tests",
+    icon: "/assets/a.item-icon-e(6).png",
+    title: "GMO free",
+    desc: "Natural, no modified products and derivatives for those who need it",
   },
 ];
 
 export const HeroSection = () => {
-  const isMediumSmallScreen = useMediaQuery("(max-width:1114px)");
-  const smallVariantStart = useMediaQuery("(min-width:600px)");
-  const smallVariantEnd = useMediaQuery("((max-width:643px))");
-
+  const medStart = useMediaQuery("(min-width:600px)");
+  const medEnd = useMediaQuery("(max-width:900px)");
   return (
     <>
       <img
-        style={{ marginTop: 10, marginBottom: 10, width: 150 }}
+        style={{ marginTop: 10, marginBottom: 10, padding: 10, width: 150 }}
         alt="elbert-logo"
         src="https://s3-alpha-sig.figma.com/img/8be1/c27b/24873ffb8a3345a8dedea9b0d8f9e7ba?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GG2iTwwFWXLLRha5qIH68jC4goFDiylKxfHytuR1FcMrJO6saFw2KdIFD7vQE1cq~1TxDxx5~Ipaa8q~9axEcvuOa2PDz9w~fhBQRjEp~edpSPrrvo3NMAqI3OKglbfC17EwtqXbDhesfazJ9qwr5M4zMoegPbqqf7ecwHYtUV-RfwcN3EOmAFB0Dez8Tc62pSTbR-fKcMf254XsHZzr0hJXspXpS82q-e8w~x7aGtEBGQKyvEgAc~qn--yVhhioHOaXvw1G6nnbxgrxQAV-2T9R5Mi1WMc1oosoKOGyMG3mMc-rFJas1JctNJX-oIlbtN3wkAOv8PEV1LrFXvMzBw__"
       />
@@ -69,8 +66,6 @@ export const HeroSection = () => {
         sx={{
           backgroundColor: "#E2F5FB",
           paddingTop: 5,
-          minHeight: { xs: "1300px", sm: "1300px", md: "750px" },
-          position: "relative",
         }}
       >
         <Typography
@@ -159,7 +154,7 @@ export const HeroSection = () => {
               }}
             >
               <Avatar
-                sx={{ width: 70, height: 70 }}
+                sx={{ width: 60, height: 60 }}
                 src="https://s3-alpha-sig.figma.com/img/1d76/fc2a/470ec862c44115964979f90b5cb3a94e?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Th4rZL6UW0PSe1myw5I2XSQNdiIva-4mr35orARFhmQ-CJcWSNgwc35tmpA5l40mlubFgehTSLb~vcPGCpceWLWUqZ99UTwIQoZ2o~29VM0cdLGZ3BVH38EXc19kTtd4KQ34s-NQaDl~nUTu72KyZQzDIqGR8uhlkTVMKxJPMMjd3DZeX3hqpkVwlI1-E5aWG1vs9J~vH2bMRQimw36fnShXO3yl5m0cB197QZYOHcMWPrfU4LhsaXm4fNf055dyUO~X~GLlZxSoWOaiMxwBMWNsVDcl7wMVccf~MueLxbVJDfgX-f5BuLmzcUz5JpjaaQlYxaB~M~YQaDINRlB54g__"
                 alt="vitamins"
               />
@@ -196,7 +191,7 @@ export const HeroSection = () => {
               }}
             >
               <Avatar
-                sx={{ width: 70, height: 70 }}
+                sx={{ width: 60, height: 60 }}
                 src="https://s3-alpha-sig.figma.com/img/c0ae/6abf/9917c0af12dcc49a9c0130d3e68e04b1?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hh0dnaq~vggZXRyPdNVZ5gDBwrbUn7ndiPhy3yqYh7-QNdqDNKfrzMdTRiFpUkJ6cWNusghP4RlAZx43hQQp2kwvSijVVqB5z4hEash7Sqg~IOFqfdSAYfO1TfLWlqmITqU9Cu8XDFQMgipyKdAJrFrRacLR6AYsUvrzVgec6FfYO5bCMjn6vzabXvmPSX-QEjizIARdhbdx8VeY16aOjTBlRUnZkbn6h-lNI3lzfRkc6s7hpLDteDeNZyhvr70CebFwVSi6cPlsSdSkh2pY5Jo47CyvFpUMbEFAVcOCMiWVfFW3jQEDhzc-nYeI095og8BxhHzRdJZhlFnofcGoDA__"
                 alt="weight loss"
               />
@@ -233,7 +228,7 @@ export const HeroSection = () => {
               }}
             >
               <Avatar
-                sx={{ width: 70, height: 70 }}
+                sx={{ width: 60, height: 60 }}
                 src="https://s3-alpha-sig.figma.com/img/ad6c/6ad1/2116d12f8d75befd05e66d41425cb402?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FqQ58ybVFSOmJfLJwlG42ci~pW1aOYBM4QzwveypXInYuWwR5YgtwZ-nKzJAhac9n-bqpfDZMa4RS~qn53O8URzpW-u5b5xR1fHnamtSyuf6OWy~doyBkbYyreNwjvFnfhHRwXE7U6IykzfJkPOWy5oB-cTfZN~hTT~ZIfCJMbZTYBGVr~q7CztlviaJRD4Dicr~6N4ROGgIfrce7mND9uNOOv8UMClpWrRba8CnSQrwRmguJsMqGiYoAW2jx~g8XEdG2ESiDaq~PCe3ci9FGKoZqlppNCWQh1ihJoEArxw6EpuuzNMLidIl-QkXb7h02O1vyad~aNnUfVhdgwuNLQ__"
                 alt="foods"
               />
@@ -262,21 +257,14 @@ export const HeroSection = () => {
             </Box>
           </Box>
         </Box>
-
+      </Box>
+      <Box sx={{ backgroundColor: "#E2F5FB", height: "200px" }}>
         <Container
           sx={{
-            position: "absolute", // Allow positioning outside the Box
-            bottom: {
-              xs: "-2630px",
-              sm: smallVariantStart && smallVariantEnd ? "-1650px" : "-1400px",
-              md: isMediumSmallScreen ? "-950px" : "-750px",
-            }, // Move image up by 50px (half of its height)
-            left: "0",
-            right: "0",
             width: "90%",
           }}
         >
-          <Box sx={{ display: "flex", gap: 1 }}>
+          <Box sx={{ display: "flex", gap: 1, paddingTop: 7 }}>
             <Box
               sx={{
                 height: "20px",
@@ -299,15 +287,20 @@ export const HeroSection = () => {
             sx={{
               backgroundColor: "#17414F",
               borderRadius: "50px",
-
+              height: {
+                xs: "1250px",
+                sm: medStart && medEnd ? "620px" : "1000px",
+                md: "380px",
+              },
+              position: "relative",
               width: "100%",
             }}
           >
             <Grid //child container
               container
               sx={{
-                paddingX: { xs: 3, sm: 5, md: 10 },
-                paddingY: 2,
+                position: "absolute",
+                top: "-60px",
                 gap: { xs: 2, sm: 0 },
               }}
             >
@@ -326,20 +319,11 @@ export const HeroSection = () => {
                     paddingY: 3,
                   }}
                 >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      backgroundColor: "white",
-                      height: "70px",
-                      width: "70px",
-                      borderRadius: "100%",
-                      color: "#003569",
-                    }}
-                  >
-                    {data.icon}
-                  </Box>
+                  <img
+                    style={{ width: "75px" }}
+                    alt={data.title}
+                    src={data.icon}
+                  />
                   <Typography
                     marginY={1}
                     variant="body2"
@@ -350,7 +334,7 @@ export const HeroSection = () => {
                   </Typography>
                   <Typography
                     variant="body2"
-                    sx={{ fontSize: "12px", width: "120px" }}
+                    sx={{ fontSize: "12px", width: "225px" }}
                     color="#D9D9D9"
                   >
                     {data.desc}
@@ -361,6 +345,8 @@ export const HeroSection = () => {
           </Box>
           <Ingredients />
         </Container>
+        <Blog />
+        <Footer />
       </Box>
     </>
   );
